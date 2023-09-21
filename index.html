@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #info {
+            display: grid;
+            grid-template-columns: 4fr 8fr;
+            gap: 10px;
+        }
+
+        #form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        table {
+            align-self: start;
+            border-collapse: collapse;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        td,
+        th {
+            padding: 10px;
+            text-align: center;
+            vertical-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="info">
+        <form action="" id="form">
+            <input type="text" placeholder="Employee Name" name="name" required>
+            <input type="email" placeholder="Email" name="email" required>
+            <input type="text" placeholder="Employee ID" name="empid" required>
+            <input type="text" placeholder="Company" name="company" required>
+            <select name="designation" id="" required>
+                <option value="SDE">SDE</option>
+                <option value="QA">QA</option>
+                <option value="CEo">CEO</option>
+            </select>
+            <button>Add Employee</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Employee Name</th>
+                    <th>Email</th>
+                    <th>Employee ID</th>
+                    <th>Company</th>
+                    <th>Designation</th>
+                    <th>Delete or Edit</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+    <script type="module" src="./script.js">
+
+    </script>
+</body>
+
+</html>
